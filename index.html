@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>ELITE GAMING STORE</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
     }
 
     html {
@@ -20,204 +20,216 @@
     }
 
     body {
-      background: #0b0b0b;
+      font-family: Arial, sans-serif;
+      background: #0b0c0f;
       color: white;
     }
 
     /* HEADER */
 
     header {
-      background: #151515;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #ff9900;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      background: #1a1b1f;
+      text-align: center;
+      padding: 25px 15px 0;
+      border-bottom: 3px solid #ff9800;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ff9900;
+    header h1 {
+      color: #ff9800;
+      font-size: 32px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      padding-bottom: 25px;
     }
 
     nav a {
-      color: white;
       text-decoration: none;
-      margin-left: 25px;
-      font-size: 16px;
+      color: #ddd;
+      font-size: 20px;
       font-weight: bold;
     }
 
     nav a:hover {
-      color: #ff9900;
+      color: #ff9800;
     }
+
 
     /* HERO */
 
     .hero {
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #111111, #2a1b08);
+      padding: 45px 20px;
+      background: linear-gradient(
+        135deg,
+        #0b0c0f,
+        #1b1b1f
+      );
     }
 
-    .hero h1 {
-      font-size: 45px;
-      color: #ff9900;
+    .hero h2 {
+      color: #ff9800;
+      font-size: 32px;
       margin-bottom: 15px;
     }
 
     .hero p {
-      color: #cccccc;
-      font-size: 18px;
+      color: #bbb;
+      font-size: 17px;
+      line-height: 1.6;
     }
 
-    /* LISTINGS */
+
+    /* ACCOUNTS */
 
     .accounts {
-      padding: 60px 8%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px 60px;
     }
 
-    .accounts h2 {
+    .accounts-title {
       text-align: center;
-      font-size: 32px;
-      color: #ff9900;
-      margin-bottom: 40px;
-    }
-
-    .account-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      color: #ff9800;
+      font-size: 30px;
+      margin-bottom: 35px;
     }
 
     .account-card {
-      background: #181818;
-      border: 1px solid #333;
-      border-radius: 15px;
+      background: #1b1c20;
+      border: 1px solid #444;
+      border-radius: 25px;
       overflow: hidden;
-      transition: 0.3s;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .account-card:hover {
-      transform: translateY(-8px);
-      border-color: #ff9900;
+      margin-bottom: 45px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     }
 
     .account-card img {
       width: 100%;
-      height: 230px;
-      object-fit: cover;
       display: block;
+      object-fit: cover;
+      min-height: 250px;
     }
 
     .account-info {
-      padding: 22px;
+      padding: 35px;
     }
 
-    .account-info h3 {
-      color: #ff9900;
-      font-size: 23px;
-      margin-bottom: 18px;
+    .account-info h2 {
+      color: #ff9800;
+      font-size: 32px;
+      margin-bottom: 30px;
     }
 
     .account-info p {
-      color: #d0d0d0;
-      margin: 10px 0;
+      font-size: 21px;
+      color: #c9c9c9;
+      margin-bottom: 22px;
       line-height: 1.5;
     }
 
-    .price {
-      color: #ff9900 !important;
-      font-size: 22px;
-      font-weight: bold;
-      margin-top: 18px !important;
+    .account-info strong {
+      color: #e0e0e0;
     }
 
-    .status {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 8px 14px;
-      border-radius: 20px;
-      background: #282828;
-      color: #ff9900;
-      font-size: 14px;
+    .price {
+      color: #ff9800 !important;
+      font-size: 34px !important;
       font-weight: bold;
+      margin-top: 30px;
     }
+
+    .showcase-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 16px 25px;
+      border-radius: 30px;
+      background: #2a2a2d;
+      color: #ffb13b;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .showcase-btn:hover {
+      background: #333338;
+    }
+
 
     /* ABOUT */
 
-    .about {
-      background: #151515;
+    #about {
+      background: #17181c;
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
+      border-top: 1px solid #333;
     }
 
-    .about h2 {
-      color: #ff9900;
+    #about h2 {
+      color: #ff9800;
       font-size: 30px;
       margin-bottom: 20px;
     }
 
-    .about p {
-      color: #cccccc;
-      max-width: 750px;
+    #about p {
+      max-width: 700px;
       margin: auto;
+      color: #bbb;
+      font-size: 17px;
       line-height: 1.7;
-      font-size: 16px;
     }
+
 
     /* FOOTER */
 
     footer {
       text-align: center;
       padding: 25px;
-      background: #080808;
-      color: #888;
-      border-top: 1px solid #222;
+      background: #0b0c0f;
+      color: #777;
+      font-size: 14px;
     }
+
 
     /* MOBILE */
 
-    @media (max-width: 650px) {
+    @media (max-width: 600px) {
 
-      header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+      header h1 {
+        font-size: 27px;
       }
 
-      .logo {
-        font-size: 21px;
+      nav {
+        gap: 25px;
       }
 
       nav a {
-        margin: 0 8px;
-        font-size: 14px;
+        font-size: 18px;
       }
 
-      .hero {
-        padding: 60px 15px;
+      .hero h2 {
+        font-size: 27px;
       }
 
-      .hero h1 {
-        font-size: 30px;
+      .account-info {
+        padding: 28px;
       }
 
-      .hero p {
-        font-size: 16px;
+      .account-info h2 {
+        font-size: 28px;
       }
 
-      .accounts {
-        padding: 45px 15px;
+      .account-info p {
+        font-size: 19px;
       }
 
-      .account-card img {
-        height: 220px;
+      .price {
+        font-size: 29px !important;
       }
 
     }
@@ -228,13 +240,12 @@
 
 <body>
 
+
   <!-- HEADER -->
 
   <header>
 
-    <div class="logo">
-      ELITE GAMING STORE
-    </div>
+    <h1>ELITE GAMING STORE</h1>
 
     <nav>
       <a href="#home">Home</a>
@@ -245,173 +256,176 @@
   </header>
 
 
-  <!-- HERO -->
+
+  <!-- HOME -->
 
   <section class="hero" id="home">
 
-    <h1>ELITE GAMING STORE</h1>
+    <h2>WELCOME TO ELITE GAMING STORE</h2>
 
     <p>
-      Explore our featured gaming profile showcase.
+      Explore featured gaming profiles and account collections.
     </p>
 
   </section>
+
 
 
   <!-- PROFILES -->
 
   <section class="accounts" id="profiles">
 
-    <h2>Featured Profiles</h2>
+    <h2 class="accounts-title">FEATURED PROFILES</h2>
 
 
-    <div class="account-container">
 
+    <!-- ACCOUNT 1 -->
 
-      <!-- PROFILE 1 -->
+    <div class="account-card">
 
-      <div class="account-card">
+      <img
+        src="file_00000006194820982ad7185a4ab2ba0.png"
+        alt="Gaming Profile 1"
+      >
 
-        <img
-          src="file_000000006194820982ad7185a4b2ba0.png"
-          alt="Gaming Profile 1">
+      <div class="account-info">
 
-        <div class="account-info">
+        <h2>Profile #1</h2>
 
-          <h3>Profile #1</h3>
+        <p>
+          <strong>Level:</strong> 78
+        </p>
 
-          <p>
-            <b>Level:</b> 78
-          </p>
+        <p>
+          <strong>Prime Level:</strong> 8 Max
+        </p>
 
-          <p>
-            <b>Prime Level:</b> 8 Max
-          </p>
+        <p>
+          <strong>Details:</strong>
+          6 years old ID with an OP collection.
+        </p>
 
-          <p>
-            <b>Details:</b>
-            6 years old ID with an OP collection.
-          </p>
+        <p class="price">
+          Reference Value: ₹15,000
+        </p>
 
-          <p class="price">
-            Reference Value: ₹15,000
-          </p>
-
-          <span class="status">
-            PROFILE SHOWCASE
-          </span>
-
-        </div>
+        <a href="#about" class="showcase-btn">
+          PROFILE SHOWCASE
+        </a>
 
       </div>
-
-
-      <!-- PROFILE 2 -->
-
-      <div class="account-card">
-
-        <img
-          src="IMG_20260831_183007_808.jpg"
-          alt="Gaming Profile 2">
-
-        <div class="account-info">
-
-          <h3>Profile #2</h3>
-
-          <p>
-            <b>Level:</b> 73
-          </p>
-
-          <p>
-            <b>Prime Level:</b> 6
-          </p>
-
-          <p>
-            <b>Details:</b>
-            7 years old ID with an OP collection.
-          </p>
-
-          <p class="price">
-            Reference Value: ₹6,000
-          </p>
-
-          <span class="status">
-            PROFILE SHOWCASE
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <!-- PROFILE 3 -->
-
-      <div class="account-card">
-
-        <img
-          src="file_00000009cfc81fd84de4ff6a7f93ecf.png"
-          alt="Gaming Profile 3">
-
-        <div class="account-info">
-
-          <h3>Profile #3</h3>
-
-          <p>
-            <b>Level:</b> 84 High Level
-          </p>
-
-          <p>
-            <b>Prime Level:</b> 6
-          </p>
-
-          <p>
-            <b>Details:</b>
-            OP collection profile with 4–5 Evo Max.
-          </p>
-
-          <p class="price">
-            Reference Value: ₹14,000
-          </p>
-
-          <span class="status">
-            PROFILE SHOWCASE
-          </span>
-
-        </div>
-
-      </div>
-
 
     </div>
 
+
+
+    <!-- ACCOUNT 2 -->
+
+    <div class="account-card">
+
+      <img
+        src="file_00000009cfc81fd84de4ff6a7f93ecf.png"
+        alt="Gaming Profile 2"
+      >
+
+      <div class="account-info">
+
+        <h2>Profile #2</h2>
+
+        <p>
+          <strong>Level:</strong> 73
+        </p>
+
+        <p>
+          <strong>Prime Level:</strong> 6
+        </p>
+
+        <p>
+          <strong>Details:</strong>
+          7 years old ID with an OP collection.
+        </p>
+
+        <p class="price">
+          Reference Value: ₹6,000
+        </p>
+
+        <a href="#about" class="showcase-btn">
+          PROFILE SHOWCASE
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ACCOUNT 3 -->
+
+    <div class="account-card">
+
+      <img
+        src="IMG_20260831_183007_808.jpg"
+        alt="Gaming Profile 3"
+      >
+
+      <div class="account-info">
+
+        <h2>Profile #3</h2>
+
+        <p>
+          <strong>Level:</strong> 84 High Level
+        </p>
+
+        <p>
+          <strong>Prime Level:</strong> 6
+        </p>
+
+        <p>
+          <strong>Details:</strong>
+          OP collection account with 4–5 Evo Max.
+        </p>
+
+        <p class="price">
+          Reference Value: ₹14,000
+        </p>
+
+        <a href="#about" class="showcase-btn">
+          PROFILE SHOWCASE
+        </a>
+
+      </div>
+
+    </div>
+
+
   </section>
+
 
 
   <!-- ABOUT -->
 
-  <section class="about" id="about">
+  <section id="about">
 
-    <h2>About ELITE GAMING STORE</h2>
+    <h2>ABOUT ELITE GAMING STORE</h2>
 
     <p>
-      ELITE GAMING STORE is a gaming profile showcase website.
-      Here you can explore featured gaming profiles and their collections.
+      ELITE GAMING STORE is a gaming profile showcase website where
+      featured gaming collections and account details are displayed.
+      Always follow the applicable game platform rules and terms.
     </p>
 
   </section>
+
 
 
   <!-- FOOTER -->
 
   <footer>
 
-    <p>
-      © 2026 ELITE GAMING STORE | All Rights Reserved
-    </p>
+    © 2026 ELITE GAMING STORE
 
   </footer>
 
 
 </body>
-
-  </html>                                       
+      </html>   
